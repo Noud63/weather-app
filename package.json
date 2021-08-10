@@ -1,0 +1,30 @@
+{
+  "name": "weathersearch",
+  "version": "1.0.0",
+  "description": "Weather Search app",
+  "main": "index.js",
+  "scripts": {
+    "@comment dev": "running the dev script bundles your js files.",
+    "dev": "webpack --mode development",
+    "@comment build": "running the build script above bundles and minifies your js files.",
+    "build": "webpack --mode production",
+    "@comment start": "running the start script serves up your app on a port.",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Noud van Dun",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5"
+  }
+}
