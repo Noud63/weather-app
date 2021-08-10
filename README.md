@@ -1,4 +1,4 @@
-<h1>Weather-App</h1> <h3>( ES6 modules webpack and babel)</h3>
+<h1>Weather-App  <h3>( ES6 modules webpack and babel)</h3></h1>
 
 Openweathermap API.<br>
 
