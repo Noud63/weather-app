@@ -1,7 +1,7 @@
 <h1>Weather-App</h1>
 <h3>ES6 modules webpack and babel</h3>
 
-Openweathermap API.(https://openweathermap.org/)<br>
+Openweathermap API. (https://openweathermap.org/)<br>
 
 With Search bar to search for weather conditions world wide. <br>
 Showing Current weather, tomorrows forecast and the sunrise and sunset (CEST).<br>
