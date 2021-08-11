@@ -1,8 +1,8 @@
 // Weather API DOMstrings
 export const domStrings = {
-        weather:document.getElementById('today'),
-        temperature: document.getElementById('temp'),
-        temperature2: document.getElementById('temp2'),
+        weather: document.getElementById('today'),
+        temperature: document.querySelector('.temp'),
+        temperature2: document.querySelector('.temp2'),
         foreCast: document.getElementById('forecast'),
         foreCast2: document.getElementById('forecast2'),
         errorMessage: document.getElementById('error2'),
@@ -17,3 +17,4 @@ export const domStrings = {
         city: document.getElementById('city'),
         city2: document.getElementById('city2')
 }
+
