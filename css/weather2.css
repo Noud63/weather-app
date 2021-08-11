@@ -63,6 +63,7 @@ body {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 68px rgb(0, 6, 20); 
+    z-index: 1;
 }
 
 #tomorrow {
@@ -78,7 +79,7 @@ body {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 68px rgb(0, 6, 20); 
-    z-index: -1;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 900px) {
@@ -197,35 +198,42 @@ h1 {
     }
   }
 
-#temp, #temp2 {
+.temp, .temp2 {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255);
     font-size: 10rem;
     text-shadow: 2px 2px 2px #00123b;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
 }
 
+.toggleCF {
+  color: black;
+  width: 130px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1100px) {
-    #temp, #temp2 {
+    .temp, .temp2 {
         font-size: 10rem;
     }
   }
 
   @media only screen and (max-width: 900px) {
-    #temp, #temp2 {
+    .temp, .temp2 {
         font-size: 10rem;
     }
   }  
 
 #forecast, #forecast2 {
     font-family: 'Arial Narrow';
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px #00123b;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -262,6 +270,16 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#sunrise:before {
+  color: orange;
+  content: "Sunrise";
+}
+
+#sunset:before {
+  color: orange;
+  content: "Sunset";
 }
 
 @media only screen and (max-width: 900px) {
@@ -335,10 +353,10 @@ input[type=text]::placeholder {
 
 #btn {
     position: absolute;
-    height: 40px;
+    height: 39px;
     width: 100px;
     background-color: #122778;
-    background-image: linear-gradient(to right bottom,rgb(198, 227, 255), #122778 75%);
+    background-image: linear-gradient(to right bottom,rgb(123, 177, 228), #091c6b 75%);
     color: white;
     border: none;
     outline: none;
@@ -369,7 +387,7 @@ input[type=text]::placeholder {
     width: 100%;
     flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
