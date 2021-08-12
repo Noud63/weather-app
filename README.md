@@ -7,4 +7,4 @@ With Search bar to search for weather conditions world wide. <br>
 Showing Current weather, tomorrows forecast and the sunrise and sunset (CEST).<br>
 Default input parameter set to Amsterdam<br><br>
 
-![weatherapp](https://user-images.githubusercontent.com/38325801/129147561-7aaac8f0-5c2b-4c77-9d8a-3dc86ee77941.png)
+![weatherappsmall](https://user-images.githubusercontent.com/38325801/129147942-4b4719a8-b392-44c2-913b-555f97a1d41f.png)
