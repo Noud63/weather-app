@@ -74,8 +74,8 @@ const controlData = async (input = 'Amsterdam') => {
     // Sunrise and sunset
     let sRise = time.convertTime(state.weather.data.data.city.sunrise);
     let sSet = time.convertTime(state.weather.data.data.city.sunset);
-    domStrings.sunRise.textContent = `: today at ${sRise}(CEST)`;
-    domStrings.sunSet.textContent = `: today at ${sSet}(CEST)`;
+    domStrings.sunRise.textContent = `\u00A0 today at ${sRise}(CEST)`;
+    domStrings.sunSet.textContent = `\u00A0 today at ${sSet}(CEST)`;
 
   } catch (error) {
     domStrings.errorMessage.textContent = 'Oooops something went wrong!';
@@ -89,7 +89,7 @@ controlData();
 //Toggle Celsius/Fahrenheit
 const tempCF = [...document.querySelectorAll('.toggleCF')]
 tempCF.forEach(temp => {
-  temp.addEventListener('click', function (e) {
+  temp.addEventListener('click', function () {
 
     if (domStrings.temperature.textContent.includes('C')) {
       domStrings.temperature.textContent = Math.round(state.tempF) + ' \xB0' + "F"

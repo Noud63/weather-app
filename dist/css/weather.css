@@ -278,12 +278,12 @@ h1 {
 
 #sunrise:before {
   color: orange;
-  content: "Sunrise";
+  content: "Sunrise: ";
 }
 
 #sunset:before {
   color: orange;
-  content: "Sunset";
+  content: "Sunset: ";
 }
 
 @media only screen and (max-width: 900px) {
