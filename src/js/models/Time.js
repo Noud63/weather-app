@@ -10,6 +10,7 @@ export function convertTime(unixTime) {
   if (hours < 10) {
     time = "0" + hours + ":" + minutes.substr(-2)
   }
+  console.log(time)
   return time;
 }
 

@@ -90,7 +90,7 @@ controlData();
 const tempCF = [...document.querySelectorAll('.toggleCF')]
 tempCF.forEach(temp => {
   temp.addEventListener('click', function (e) {
-    
+
     if (domStrings.temperature.textContent.includes('C')) {
       domStrings.temperature.textContent = Math.round(state.tempF) + ' \xB0' + "F"
       domStrings.temperature2.textContent = Math.round(state.tempF2) + ' \xB0' + "F"
@@ -99,6 +99,7 @@ tempCF.forEach(temp => {
       domStrings.temperature2.textContent = Math.round(state.tempC2) + ' \xB0' + "C"
     }
 
-   })
+  })
 })
 
+console.log(state)
