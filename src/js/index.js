@@ -19,7 +19,6 @@ domStrings.button.addEventListener('click', function (e) {
 // State of the app
 const state = {}
 
-
 // Control and process weather-data
 const controlData = async (input = 'Amsterdam') => {
   try {
