@@ -45,7 +45,7 @@ const controlData = async (input = 'Amsterdam') => {
     const dateTomorrow = searchView.getDate()[1]
     domStrings.day2.textContent = dateTomorrow;
 
-    // Array of weather reports througout the day
+    // Array of weather reports throughout the day
     let list = state.weather.data.data.list
 
     //Weather icons
@@ -57,7 +57,6 @@ const controlData = async (input = 'Amsterdam') => {
     // Temperatures of today and tomorrow
     state.tempC = list[0].main.temp;
     domStrings.temperature.textContent = Math.round(state.tempC) + ' \xB0' + "C";
-
     state.tempC2 = list[8].main.temp;
     domStrings.temperature2.textContent = Math.round(state.tempC2) + ' \xB0' + "C";
 
